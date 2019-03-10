@@ -16,7 +16,7 @@ for tweet in tweets:
     print (tweet.text)   #print tweet's text\n",
     analysis = TextBlob(tweet.text)
     print(analysis.sentiment)    #print tweet's polarity\n",
-    non_bmp_map = dict.fromkeys(range(0x10000, sys.maxunicode + 1), 0xfffd)
+    #non_bmp_map = dict.fromkeys(range(0x10000, sys.maxunicode + 1), 0xfffd)
     for tweet in tweets:
        print (tweet.text.translate(non_bmp_map))    #print tweet's text\n",
        analysis = TextBlob(tweet.text)
